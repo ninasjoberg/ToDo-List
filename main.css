@@ -1,0 +1,34 @@
+main{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #B34D5B;
+}
+
+#toDoList{
+	color: #1F564E;
+	font-family: helvetica;
+	font-size: 20px;
+
+}
+
+#add{
+	
+}
+
+#boxToDo{
+	margin-top: 30vw;
+	background-color: #639E93;
+	width: 55%;
+	margin: auto;
+}
+
+#boxDone{
+	margin-top: 20vw;
+	background-color: #1F564E;
+	width: 55%;
+	margin: auto;
+}
+
+#Done{
+}

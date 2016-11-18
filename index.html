@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>To-Do list</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<main>
+		<h1 class="header text">To-Do list</h1>
+			<input id="add" type="text" value=""></input>
+			<button id="ok" onClick="clickHandler()">Create</button>
+		<div class="box">
+			<h3 class="text">Här läggs att göra till</h3>
+			<ul id="todo-list"></ul>
+		</div>
+		<div class="box dark">
+			<h3 class="text">Här läggs färdiga uppgifter</h3>
+			<ul id="done-list"></ul>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="toDo.js"></script>
+</body>
+</html>
