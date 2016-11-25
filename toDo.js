@@ -19,7 +19,7 @@ function clickHandler(){
 }
 
 //Funktion som skapar en ny textnode av det som skrivits in i inputfältet. Textnoden läggs i en 
-//ny div i ett nytt list-item. Sedan anropas två funktioner för att skapa tillhörande knappar. 
+//ny div i ett nytt list-item. Sedan anropas funktionen för att skapa tillhörande knappar. 
 function createNew(addText){
 	var toDoText = document.createTextNode(addText);
 	var textDiv = document.createElement('div'); 
@@ -31,11 +31,8 @@ function createNew(addText){
 	createButton(toDoItem, 'Delete', deleteItem);
 }	
 
-//Funktion som skapar knapparna Done och Delete, argumenten för de olika knapparna är olika och 
-//skickas med i föregånede funktion. Knapparna sätts som child till samma element som diven till texten 
-//i föregånde funktion, dvs child till toDoItem som skickas med som argument för parent. 
-//En onclick som är lika med en funktion sätts till knappen. Argument för vilken funktion som ska sättas 
-//lika med onclick har kickats med som tredje argument: clickfn. 
+//Funktion som skapar knapparna baserat på parametrarna parent(till knappelementet), type(text på knappen) 
+//och en funktion(som kommer köras när man klickar på knappen).  
 function createButton(parent, type, clickfn){
 	var button = document.createElement('button');
 	button.textContent = type;
@@ -44,7 +41,7 @@ function createButton(parent, type, clickfn){
 	button.onclick = clickfn;
 }
 
-//Funktion som tar bort hela list-item, dvs texten, och de båda knapparna när man trycker på Deleteknappen. 
+//Funktion som tar bort hela list-item dvs texten, och de båda knapparna när man trycker på Deleteknappen. 
 function deleteItem(event){ 
 	var deleteButton = event.target;
 	var listItem = deleteButton.parentElement;
@@ -52,8 +49,8 @@ function deleteItem(event){
 	toDoList.removeChild(listItem);
 }
 
-//Funktion som lägger till hela list-item och de båda knapparna till listan "done" för att sedan radera
-//knappen done. 
+//Funktion som lägger till hela list-item dvs texten, och de båda knapparna till listan "done" för att sedan 
+//radera knappen done. 
 function doneItem(event){
 	var doneButton = event.target;
 	var listItem = doneButton.parentElement;
