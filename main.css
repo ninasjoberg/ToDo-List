@@ -88,7 +88,7 @@ ul li button{
 	border-color: #9A5F5B;
 }
 
-#done-list{
+#done-list div{
 	text-decoration: line-through;
 }
 
