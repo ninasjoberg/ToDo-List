@@ -1,34 +1,102 @@
-main{
+body{
+	background-color: #2B4E66;
+}
+
+.text{
+	font-family: arial;
+	font-weight: normal;
 	text-align: center;
-	height: 100%;
-	width: 100%;
-	background-color: #B34D5B;
+	color: #FE5801;
 }
 
-#toDoList{
-	color: #1F564E;
-	font-family: helvetica;
-	font-size: 20px;
-
+.header{
+	padding-bottom: 25px;
+	font-size: 40px;
 }
 
-#add{
-	
-}
-
-#boxToDo{
-	margin-top: 30vw;
-	background-color: #639E93;
-	width: 55%;
+#holder{
+	width: 300px;
 	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
-#boxDone{
-	margin-top: 20vw;
-	background-color: #1F564E;
-	width: 55%;
+#add-task{
+	margin: 0 15px 0 0;
+	font-size: 15px;
+}
+
+#create{
+	border-width: 1px;
+	margin-left: 15px;
+	background-color: white;
+	border-color: #FE5801;
+}
+
+.box{
+	width: 400px;
+	min-height: 120px;
+	padding-bottom: 15px;
 	margin: auto;
+	background-color: #5F7E79;
+	box-shadow: inset 0 0 6px #000000;
+	border-radius: 5px;
 }
 
-#Done{
+h3.text{
+	color: #223E44;
+	padding-top: 15px;
 }
+
+ul{
+	list-style: none;
+	padding: 0 15px;
+	text-align: left;
+}
+
+ul li{
+	margin: 20px;
+	border-bottom-style: solid;
+	border-bottom-color: #223E44;
+	border-width: 1px;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ul li div{
+	width: 200px;
+	padding: 10px;
+	text-align: left;
+	word-break: break-all;
+}
+
+ul li button{
+	height: 24px;
+	margin-left: 15px;	
+	background-color: white;
+	border-radius: 0;
+	border-width: 2px;	
+	box-sizing: border-box;
+}
+
+.buttonDone{
+	border-color: #739057;
+}
+
+.buttonDelete{
+	border-color: #9A5F5B;
+}
+
+#done-list{
+	text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+

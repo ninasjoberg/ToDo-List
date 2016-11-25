@@ -7,15 +7,18 @@
 </head>
 <body>
 	<main>
-		<h1 class="header text">To-Do list</h1>
-			<input id="add" type="text" value=""></input>
-			<button id="ok" onClick="clickHandler()">Create</button>
+		<h1 class="header text">To Do list</h1>
+		<div id="holder">
+			<p class="text" id="add-task">Add a task:</p>
+			<input id="add" type="text" value="" placeholder="text" required="" autofocus></input>
+			<button id="create" onClick="clickHandler()">Create</button>
+		</div>	
 		<div class="box">
-			<h3 class="text">Här läggs att göra till</h3>
+			<h3 class="text">To Do:</h3>
 			<ul id="todo-list"></ul>
 		</div>
-		<div class="box dark">
-			<h3 class="text">Här läggs färdiga uppgifter</h3>
+		<div class="box">
+			<h3 class="text">Done:</h3>
 			<ul id="done-list"></ul>
 		</div>
 	</main>
